@@ -1,7 +1,7 @@
 [project]
 name = "my-python-project-template"
 version = "0.2.0"
-description = "A python project template with uv, bump-my-version, mypy, pytest, and ruff."
+description = "A python project template with uv, bump-my-version, mypy, pytest, ruff and a taskfile."
 readme = "README.md"
 authors = [
     { name = "Kugeleis", email = "9948777+Kugeleis@users.noreply.github.com" }
@@ -34,7 +34,7 @@ regex            = true
 search           = '^version\s*=\s*"{current_version}"$'
 replace          = 'version = "{new_version}"'
 allow_dirty      = true
-pre_commit_hooks = ["uv sync", "git add uv.lock"]        # The new bit.
+pre_commit_hooks = ["uv sync", "git add uv.lock"]
 
 [[tool.bumpversion.files]]
 filename = "pyproject.toml"
