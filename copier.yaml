@@ -1,0 +1,27 @@
+# copier.yml
+_templates_suffix: .jinja
+
+project_name:
+    type: str
+    help: Project name (used for directory and package name)
+
+package_name:
+    type: str
+    help: Python package name (snake_case)
+    default: "{{ project_name | lower | replace('-', '_') }}"
+
+author_name:
+    type: str
+    help: Your full name
+
+author_email:
+    type: str
+    help: Your email address
+
+python_version:
+    type: str
+    help: Minimum Python version
+    default: "3.13"
+    choices:
+        - "3.13"
+        - "3.14"

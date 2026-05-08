@@ -1,0 +1,8 @@
+# Changes here will be overwritten by Copier
+_commit: HEAD
+_src_path: .
+author_email: 9948777+Kugeleis@users.noreply.github.com
+author_name: Kugeleis
+package_name: my_python_project_template
+project_name: my-python-project-template
+python_version: "3.13"
