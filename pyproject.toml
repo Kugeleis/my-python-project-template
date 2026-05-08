@@ -1,0 +1,39 @@
+[project]
+name = "my-python-project-template"
+version = "0.1.0"
+description = "A python project template with uv, bump-my-version, mypy, pytest, and ruff."
+readme = "README.md"
+authors = [
+    { name = "Kugeleis", email = "9948777+Kugeleis@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+my-python-project-template = "my_python_project_template:main"
+
+[build-system]
+requires = ["uv_build>=0.11.11,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "bump-my-version>=1.3.0",
+    "mypy>=2.0.0",
+    "pytest>=9.0.3",
+    "ruff>=0.15.12",
+]
+
+[tool.bumpversion]
+# current_version auto-detected from project.version
+commit           = true
+commit_args      = ""
+tag              = true
+regex            = true
+search           = '^version\s*=\s*"{current_version}"$'
+replace          = 'version = "{new_version}"'
+allow_dirty      = true
+pre_commit_hooks = ["uv sync", "git add uv.lock"]        # The new bit.
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
