@@ -1,5 +1,6 @@
 # my-python-project-template
 
+![Python Version](https://img.shields.io/badge/python-3.13+-blue.svg)
 [![Ruff](https://github.com/Kugeleis/my-python-project-template/actions/workflows/ruff.yml/badge.svg)](https://github.com/Kugeleis/my-python-project-template/actions/workflows/ruff.yml)
 [![MyPy](https://github.com/Kugeleis/my-python-project-template/actions/workflows/mypy.yml/badge.svg)](https://github.com/Kugeleis/my-python-project-template/actions/workflows/mypy.yml)
 [![Pytest](https://github.com/Kugeleis/my-python-project-template/actions/workflows/pytest.yml/badge.svg)](https://github.com/Kugeleis/my-python-project-template/actions/workflows/pytest.yml)
