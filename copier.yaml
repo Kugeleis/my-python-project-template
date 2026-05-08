@@ -1,6 +1,11 @@
 # copier.yml
 _templates_suffix: .jinja
 
+_tasks:
+    - git init
+    - pre-commit install
+    - pre-commit autoupdate
+
 project_name:
     type: str
     help: Project name (used for directory and package name)
