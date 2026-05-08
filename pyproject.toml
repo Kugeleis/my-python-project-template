@@ -1,6 +1,6 @@
 [project]
 name = "my-python-project-template"
-version = "0.2.0"
+version = "0.2.1"
 description = "A python project template with uv, bump-my-version, mypy, pytest, ruff and a taskfile."
 readme = "README.md"
 authors = [
